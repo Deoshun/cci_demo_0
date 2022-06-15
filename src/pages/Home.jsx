@@ -27,8 +27,8 @@ function Home() {
 
       </main>
 
-      {/*  Site footer 
-      <Footer />*/}
+      {/*  Site footer */}
+      <Footer />
 
     </div>
   );

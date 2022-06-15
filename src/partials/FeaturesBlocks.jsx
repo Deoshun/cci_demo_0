@@ -33,8 +33,8 @@ function FeaturesBlocks() {
                   </g>
                 </g>
               </svg>
-              <h4 className="text-xl font-bold leading-snug tracking-tight mb-1">Cultivate National Talent Pool</h4>
-              <p className="text-gray-600 text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              <h4 className="text-xl font-bold leading-snug tracking-tight mb-1">Cultivate Talent Pool</h4>
+              <p className="text-gray-600 text-center">Have more options to hire by helping create them.</p>
             </div>
 
             {/* 2nd item */}
@@ -50,7 +50,7 @@ function FeaturesBlocks() {
                 </g>
               </svg>
               <h4 className="text-xl font-bold leading-snug tracking-tight mb-1">Build Brand Awareness</h4>
-              <p className="text-gray-600 text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              <p className="text-gray-600 text-center">Become known by top students as the place to bring their talents</p>
             </div>
 
             {/* 3rd item */}
@@ -65,7 +65,7 @@ function FeaturesBlocks() {
                 </g>
               </svg>
               <h4 className="text-xl font-bold leading-snug tracking-tight mb-1">Grow Community</h4>
-              <p className="text-gray-600 text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              <p className="text-gray-600 text-center">Help us bring together and celabrate builders **spelling</p>
             </div>
           </div>
 

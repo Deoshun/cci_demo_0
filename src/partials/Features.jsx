@@ -54,8 +54,8 @@ function Features() {
                   onClick={(e) => { e.preventDefault(); setTab(1); }}
                 >
                   <div>
-                    <div className="font-bold leading-snug tracking-tight mb-1">Empowering with skills</div>
-                    <div className="text-gray-600">Text</div>
+                    <div className="font-bold leading-snug tracking-tight mb-1">A focus on civic impact</div>
+                    <div className="text-gray-600">UniHack encourages you to identify a civic issue in our society and find a solution for it.*copypaste*</div>
                   </div>
                   <div className="flex justify-center items-center w-8 h-8 bg-white rounded-full shadow flex-shrink-0 ml-3">
                     <svg className="w-3 h-3 fill-current" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
@@ -69,8 +69,8 @@ function Features() {
                   onClick={(e) => { e.preventDefault(); setTab(2); }}
                 >
                   <div>
-                    <div className="font-bold leading-snug tracking-tight mb-1">Learning to create value</div>
-                    <div className="text-gray-600">Text 2</div>
+                    <div className="font-bold leading-snug tracking-tight mb-1">Building skills and ablity to create value</div>
+                    <div className="text-gray-600">We also provide participating students with workshops to teach a range of skills & mentors to guide them during the hack.</div>
                   </div>
                   <div className="flex justify-center items-center w-8 h-8 bg-white rounded-full shadow flex-shrink-0 ml-3">
                     <svg className="w-3 h-3 fill-current" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
@@ -85,7 +85,7 @@ function Features() {
                 >
                   <div>
                     <div className="font-bold leading-snug tracking-tight mb-1">Showcase Talent Pool</div>
-                    <div className="text-gray-600">Text 3</div>
+                    <div className="text-gray-600">**dont know what to put**</div>
                   </div>
                   <div className="flex justify-center items-center w-8 h-8 bg-white rounded-full shadow flex-shrink-0 ml-3">
                     <svg className="w-3 h-3 fill-current" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
