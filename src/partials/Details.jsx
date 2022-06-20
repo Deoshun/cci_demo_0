@@ -1,13 +1,10 @@
 import React, { useState, useRef, useEffect } from 'react';
 import Transition from '../utils/Transition';
 
-import CivicImg from '../images/civic-impact-school.jpg';
-import BuildSkillImg from '../images/talent-build.jpeg';
-import ShowcaseImg from '../images/talent-showcase.jpg';
-
+import FeaturesBg from '../images/features-bg.png';
 import FeaturesElement from '../images/features-element.png';
 
-function Features() {
+function Details() {
 
   const [tab, setTab] = useState(1);
 
@@ -33,21 +30,13 @@ function Features() {
 
       <div className="relative max-w-6xl mx-auto px-4 sm:px-6">
         <div className="pt-12 md:pt-20">
-
-          {/* Section header */}
-          <div className="max-w-3xl mx-auto text-center pb-12 md:pb-16">
-            <h1 className="h2 mb-4">Learn about Unihack Abuja</h1>
-            <p className="text-xl text-gray-600">Unihack Abuja a week long hackathon for students of The University of Abuja, joining hands with Nigerias hottest start-ups, we'll showcase what young nigerians are capable of,  a bit of jet fuel for Nigerias fast growing tech industry.</p>
-          </div>
-
           {/* Section content */}
           <div className="md:grid md:grid-cols-12 md:gap-6">
-
             {/* Content */}
             <div className="max-w-xl md:max-w-none md:w-full mx-auto md:col-span-7 lg:col-span-6 md:mt-6" data-aos="fade-right">
               <div className="md:pr-4 lg:pr-12 xl:pr-16 mb-8">
-                <h3 className="h3 mb-3">Project Objectives</h3>
-                <p className="text-xl text-gray-600">We want to create a shift in perception by demonstating, and showcasing the capablities of Nigerian students</p>
+                <h3 className="h3 mb-3">Event Details</h3>
+                <p className="text-xl text-gray-600">More info on Unihack Abuja</p>
               </div>
               {/* Tabs buttons */}
               <div className="mb-8 md:mb-0">
@@ -57,8 +46,8 @@ function Features() {
                   onClick={(e) => { e.preventDefault(); setTab(1); }}
                 >
                   <div>
-                    <div className="font-bold leading-snug tracking-tight mb-1">A focus on civic impact</div>
-                    <div className="text-gray-600">UniHack encourages you to identify a civic issue in our society and find a solution for it.*copypaste*</div>
+                    <div className="font-bold leading-snug tracking-tight mb-1">The Event</div>
+                    <div className="text-gray-600">Details about the event, what will happen, where it'll happen and when.</div>
                   </div>
                   <div className="flex justify-center items-center w-8 h-8 bg-white rounded-full shadow flex-shrink-0 ml-3">
                     <svg className="w-3 h-3 fill-current" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
@@ -72,8 +61,8 @@ function Features() {
                   onClick={(e) => { e.preventDefault(); setTab(2); }}
                 >
                   <div>
-                    <div className="font-bold leading-snug tracking-tight mb-1">Building skills and ablity to create value</div>
-                    <div className="text-gray-600">We also provide participating students with workshops to teach a range of skills & mentors to guide them during the hack.</div>
+                    <div className="font-bold leading-snug tracking-tight mb-1">The participants</div>
+                    <div className="text-gray-600">Students, mentors, teachers and volenteers will all be comming together to make this happen.</div>
                   </div>
                   <div className="flex justify-center items-center w-8 h-8 bg-white rounded-full shadow flex-shrink-0 ml-3">
                     <svg className="w-3 h-3 fill-current" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
@@ -87,8 +76,8 @@ function Features() {
                   onClick={(e) => { e.preventDefault(); setTab(3); }}
                 >
                   <div>
-                    <div className="font-bold leading-snug tracking-tight mb-1">Showcase Talent Pool</div>
-                    <div className="text-gray-600">The talent is here, and ready, Unihack Abuja will prove this.</div>
+                    <div className="font-bold leading-snug tracking-tight mb-1">Get Involved</div>
+                    <div className="text-gray-600">Intrested in Unihack Abuja? Make change with us, get involved.</div>
                   </div>
                   <div className="flex justify-center items-center w-8 h-8 bg-white rounded-full shadow flex-shrink-0 ml-3">
                     <svg className="w-3 h-3 fill-current" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
@@ -98,7 +87,6 @@ function Features() {
                 </a>
               </div>
             </div>
-
             {/* Tabs items */}
             <div className="max-w-xl md:max-w-none md:w-full mx-auto md:col-span-5 lg:col-span-6 mb-8 md:mb-0 md:order-1" data-aos="zoom-y-out" ref={tabs}>
               <div className="relative flex flex-col text-center lg:text-right">
@@ -114,8 +102,8 @@ function Features() {
                   leaveStart="opacity-100 translate-y-0"
                   leaveEnd="opacity-0 -translate-y-16"
                 >
-                  <div className="relative inline-flex flex-col max-h-400">
-                    <img className="md:max-w-none mx-auto rounded" src={CivicImg} width="500" height="462" alt="Features bg" />
+                  <div className="relative inline-flex flex-col">
+                  <h3 className="h3 mb-3">Data 1</h3>
                   </div>
                 </Transition>
                 {/* Item 2 */}
@@ -130,8 +118,8 @@ function Features() {
                   leaveStart="opacity-100 translate-y-0"
                   leaveEnd="opacity-0 -translate-y-16"
                 >
-                  <div className="relative inline-flex flex-col max-h-400">
-                    <img className="md:max-w-none mx-auto rounded" src={BuildSkillImg} width="500" height="462" alt="Features bg" />
+                  <div className="relative inline-flex flex-col">
+                  <h3 className="h3 mb-3">Data 2</h3>
                   </div>
                 </Transition>
                 {/* Item 3 */}
@@ -146,11 +134,12 @@ function Features() {
                   leaveStart="opacity-100 translate-y-0"
                   leaveEnd="opacity-0 -translate-y-16"
                 >
-                  <div className="relative inline-flex flex-col max-h-400">
-                    <img className="md:max-w-none mx-auto rounded" src={ShowcaseImg} width="500" height="462" alt="Features bg" />
+                  <div className="relative inline-flex flex-col">
+                  <h3 className="h3 mb-3">Data 3</h3>
                   </div>
                 </Transition>
               </div>
+              
             </div >
 
           </div >
@@ -161,4 +150,4 @@ function Features() {
   );
 }
 
-export default Features;
+export default Details;
