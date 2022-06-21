@@ -115,6 +115,7 @@ function Features() {
                   leaveEnd="opacity-0 -translate-y-16"
                 >
                   <div className="relative inline-flex flex-col max-h-400">
+                    <img className="md:max-w-none mx-auto rounded pb-5" src={CivicImg} width="500" height="462" alt="Features bg" />
                     <img className="md:max-w-none mx-auto rounded" src={CivicImg} width="500" height="462" alt="Features bg" />
                   </div>
                 </Transition>
@@ -131,6 +132,7 @@ function Features() {
                   leaveEnd="opacity-0 -translate-y-16"
                 >
                   <div className="relative inline-flex flex-col max-h-400">
+                    <img className="md:max-w-none mx-auto rounded pb-5" src={BuildSkillImg} width="500" height="462" alt="Features bg" />
                     <img className="md:max-w-none mx-auto rounded" src={BuildSkillImg} width="500" height="462" alt="Features bg" />
                   </div>
                 </Transition>
@@ -147,6 +149,7 @@ function Features() {
                   leaveEnd="opacity-0 -translate-y-16"
                 >
                   <div className="relative inline-flex flex-col max-h-400">
+                    <img className="md:max-w-none mx-auto rounded pb-5" src={ShowcaseImg} width="500" height="462" alt="Features bg" />
                     <img className="md:max-w-none mx-auto rounded" src={ShowcaseImg} width="500" height="462" alt="Features bg" />
                   </div>
                 </Transition>

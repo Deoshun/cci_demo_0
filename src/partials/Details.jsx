@@ -103,7 +103,11 @@ function Details() {
                   leaveEnd="opacity-0 -translate-y-16"
                 >
                   <div className="relative inline-flex flex-col">
-                  <h3 className="h3 mb-3">Data 1</h3>
+                  <h3 className="h3 mb-3">5 days of training and workshops</h3>
+                  <h3 className="h3 mb-3">5 days of hacking</h3>
+                  <h3 className="h3 mb-3">10 Teams</h3>
+                  <h3 className="h3 mb-3">4 Project Tracks</h3>
+                  <h3 className="h3 mb-3">Application Encouraged (its free)</h3>
                   </div>
                 </Transition>
                 {/* Item 2 */}
@@ -119,7 +123,9 @@ function Details() {
                   leaveEnd="opacity-0 -translate-y-16"
                 >
                   <div className="relative inline-flex flex-col">
-                  <h3 className="h3 mb-3">Data 2</h3>
+                  <h3 className="h3 mb-3">Applicants have to be students from the uni of Abuja</h3>
+                  <h3 className="h3 mb-3">At least one member of the team has to have prior knowledge in a STEM subject</h3>
+                  <h3 className="h3 mb-3">Applications are open on 21/9/22</h3>
                   </div>
                 </Transition>
                 {/* Item 3 */}
@@ -135,7 +141,13 @@ function Details() {
                   leaveEnd="opacity-0 -translate-y-16"
                 >
                   <div className="relative inline-flex flex-col">
-                  <h3 className="h3 mb-3">Data 3</h3>
+                  <h3 className="h3 mb-3">Get involved and apply to hack</h3>
+                  <h3 className="h3 mb-3">Get involved and become a mentor</h3>
+                  <h3 className="h3 mb-3">Get involved and become a partner</h3>
+                  <h3 className="h3 mb-3">Get involved and become a supporter</h3>
+                  <h3 className="h3 mb-3">Get involved and become a mentor</h3>
+                  <h3 className="h3 mb-3">Get involved and help make unihack happen (abasidor)</h3>
+                  <h3 className="h3 mb-3">Talk about us</h3>
                   </div>
                 </Transition>
               </div>
