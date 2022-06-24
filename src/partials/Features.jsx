@@ -2,8 +2,11 @@ import React, { useState, useRef, useEffect } from 'react';
 import Transition from '../utils/Transition';
 
 import CivicImg from '../images/civic-impact-school.jpg';
+import CivicImgTwo from '../images/civic-impact-school-2.jpg';
 import BuildSkillImg from '../images/talent-build.jpeg';
+import BuildSkillImgTwo from '../images/talent-build-2.jpg';
 import ShowcaseImg from '../images/talent-showcase.jpg';
+import ShowcaseImgTwo from '../images/talent-showcase-2.jpg';
 
 import FeaturesElement from '../images/features-element.png';
 
@@ -100,8 +103,8 @@ function Features() {
             </div>
 
             {/* Tabs items */}
-            <div className="max-w-xl md:max-w-none md:w-full mx-auto md:col-span-5 lg:col-span-6 mb-8 md:mb-0 md:order-1" data-aos="zoom-y-out" ref={tabs}>
-              <div className="relative flex flex-col text-center lg:text-right">
+            <div className="max-w-xl md:max-w-none md:w-full mx-auto md:col-span-5 lg:col-span-6 mb-8 md:mb-0 md:order-1 min-h-max" data-aos="zoom-y-out" ref={tabs}>
+              <div className="relative flex flex-col text-center lg:text-right min-h-max">
                 {/* Item 1 */}
                 <Transition
                   show={tab === 1}
@@ -114,9 +117,13 @@ function Features() {
                   leaveStart="opacity-100 translate-y-0"
                   leaveEnd="opacity-0 -translate-y-16"
                 >
-                  <div className="relative inline-flex flex-col max-h-400">
-                    <img className="md:max-w-none mx-auto rounded pb-5" src={CivicImg} width="500" height="462" alt="Features bg" />
-                    <img className="md:max-w-none mx-auto rounded" src={CivicImg} width="500" height="462" alt="Features bg" />
+                  <div className="relative inline-flex flex-col justify-evenly min-h-max space-y-5">
+                    <div className="flex flex-col justify-center max-h-72 object-contain overflow-clip rounded pb-5">
+                      <img className="md:max-w-none mx-auto rounded pb-5" src={CivicImg} width="500" height="462" alt="Features bg" />
+                    </div>
+                    <div className="flex flex-col justify-center max-h-72 object-contain overflow-clip rounded">
+                      <img className="md:max-w-none mx-auto rounded pb-5" src={CivicImgTwo} width="500" height="462" alt="Features bg" />
+                    </div>
                   </div>
                 </Transition>
                 {/* Item 2 */}
@@ -131,9 +138,13 @@ function Features() {
                   leaveStart="opacity-100 translate-y-0"
                   leaveEnd="opacity-0 -translate-y-16"
                 >
-                  <div className="relative inline-flex flex-col max-h-400">
-                    <img className="md:max-w-none mx-auto rounded pb-5" src={BuildSkillImg} width="500" height="462" alt="Features bg" />
-                    <img className="md:max-w-none mx-auto rounded" src={BuildSkillImg} width="500" height="462" alt="Features bg" />
+                  <div className="relative inline-flex flex-col justify-evenly min-h-max space-y-5">
+                    <div className="flex flex-col justify-center max-h-72 object-contain overflow-clip rounded pb-5">
+                      <img className="md:max-w-none mx-auto rounded pb-5" src={BuildSkillImg} width="500" height="462" alt="Features bg" />
+                    </div>
+                    <div className="flex flex-col justify-center max-h-72 object-contain overflow-clip rounded">
+                      <img className="md:max-w-none mx-auto rounded pb-5" src={BuildSkillImgTwo} width="500" height="462" alt="Features bg" />
+                    </div>
                   </div>
                 </Transition>
                 {/* Item 3 */}
@@ -148,9 +159,13 @@ function Features() {
                   leaveStart="opacity-100 translate-y-0"
                   leaveEnd="opacity-0 -translate-y-16"
                 >
-                  <div className="relative inline-flex flex-col max-h-400">
-                    <img className="md:max-w-none mx-auto rounded pb-5" src={ShowcaseImg} width="500" height="462" alt="Features bg" />
-                    <img className="md:max-w-none mx-auto rounded" src={ShowcaseImg} width="500" height="462" alt="Features bg" />
+                  <div className="relative inline-flex flex-col justify-evenly min-h-max space-y-5">
+                    <div className="flex flex-col justify-center max-h-72 object-contain overflow-clip rounded pb-5">
+                      <img className="md:max-w-none mx-auto rounded pb-5" src={ShowcaseImg} width="500" height="462" alt="Features bg" />
+                    </div>
+                    <div className="flex flex-col justify-center max-h-72 object-contain overflow-clip rounded">
+                      <img className="md:max-w-none mx-auto rounded pb-5" src={ShowcaseImgTwo} width="500" height="462" alt="Features bg" />
+                    </div>
                   </div>
                 </Transition>
               </div>
