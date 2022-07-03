@@ -88,13 +88,13 @@ function Details() {
               </div>
             </div>
             {/* Tabs items */}
-            <div className="max-w-xl md:max-w-none md:w-full mx-auto md:col-span-5 lg:col-span-6 mb-8 md:mb-0 md:order-1" data-aos="zoom-y-out" ref={tabs}>
-              <div className="relative flex flex-col text-center lg:text-right">
+            <div className="max-w-xl md:max-w-none md:w-full mx-auto md:col-span-5 lg:col-span-6 mb-8 md:mb-0 md:order-1 justify-center content-center self-center" data-aos="zoom-y-out" ref={tabs}>
+              <div className="relative flex flex-col text-center lg:text-left">
                 {/* Item 1 */}
                 <Transition
                   show={tab === 1}
                   appear={true}
-                  className="w-full"
+                  className="w-full self-center"
                   enter="transition ease-in-out duration-700 transform order-first"
                   enterStart="opacity-0 translate-y-16"
                   enterEnd="opacity-100 translate-y-0"
@@ -102,12 +102,11 @@ function Details() {
                   leaveStart="opacity-100 translate-y-0"
                   leaveEnd="opacity-0 -translate-y-16"
                 >
-                  <div className="relative inline-flex flex-col">
-                  <h3 className="h3 mb-3">5 days of training and workshops</h3>
-                  <h3 className="h3 mb-3">5 days of hacking</h3>
-                  <h3 className="h3 mb-3">10 Teams</h3>
-                  <h3 className="h3 mb-3">4 Project Tracks</h3>
-                  <h3 className="h3 mb-3">Application Encouraged (its free)</h3>
+                  <div className="">
+                  <h3 className="h3 mb-3">Two Weeks Of Workshops & Coding</h3>
+                  <h3 className="h3 mb-3">50 Participats</h3>
+                  <h3 className="h3 mb-3">4 Project Paths</h3>
+                  <h3 className="h3 mb-3">Applications Are Free</h3>
                   </div>
                 </Transition>
                 {/* Item 2 */}
@@ -123,8 +122,9 @@ function Details() {
                   leaveEnd="opacity-0 -translate-y-16"
                 >
                   <div className="relative inline-flex flex-col">
-                  <h3 className="h3 mb-3">Applicants have to be students from the uni of Abuja</h3>
-                  <h3 className="h3 mb-3">At least one member of the team has to have prior knowledge in a STEM subject</h3>
+                  <h3 className="h3 mb-3">To participate:</h3>
+                  <h3 className="h3 mb-3">Have to be students of UoA</h3>
+                  <h3 className="h3 mb-3">One member of the team must have be STEM specialisised</h3>
                   <h3 className="h3 mb-3">Applications are open on 21/9/22</h3>
                   </div>
                 </Transition>
@@ -141,13 +141,11 @@ function Details() {
                   leaveEnd="opacity-0 -translate-y-16"
                 >
                   <div className="relative inline-flex flex-col">
-                  <h3 className="h3 mb-3">Get involved and apply to hack</h3>
-                  <h3 className="h3 mb-3">Get involved and become a mentor</h3>
-                  <h3 className="h3 mb-3">Get involved and become a partner</h3>
-                  <h3 className="h3 mb-3">Get involved and become a supporter</h3>
-                  <h3 className="h3 mb-3">Get involved and become a mentor</h3>
-                  <h3 className="h3 mb-3">Get involved and help make unihack happen (abasidor)</h3>
-                  <h3 className="h3 mb-3">Talk about us</h3>
+                  <h3 className="h3 mb-3">Other Ways To Get Involved:</h3>
+                  <h3 className="h3 mb-3">Become a Unihack Partner</h3>
+                  <h3 className="h3 mb-3">Become a Unihack Ambassidor</h3>
+                  <h3 className="h3 mb-3">Become a Unihack Mentor</h3>
+                  <h3 className="h3 mb-3">To find out more, Contact Us</h3>
                   </div>
                 </Transition>
               </div>
