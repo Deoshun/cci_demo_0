@@ -56,7 +56,7 @@ jobs:
       - helm/install-helm-client:
           version: v3.0.0
       - helm/upgrade-helm-chart:
-          chart: ./helm-charts/react-app
+          chart: ./helm-charts/demo-app
           release-name: deployment-demo
           no-output-timeout: 5m
           values-to-override: image.tag=${CIRCLE_SHA1},image.repository=${DOCKER_REPOSITORY} 
