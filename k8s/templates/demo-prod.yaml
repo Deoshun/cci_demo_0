@@ -1,0 +1,35 @@
+kind: Deployment # Pod manager
+apiVersion: apps/v1
+metadata:
+  name: test-deployment-0
+spec: # specifying deployment
+  replicas: 2
+  selector:
+    matchLabels:
+      app: init
+  template:
+    metadata:
+      labels:
+        app: init
+    spec: # pod spec
+      containers:
+        - name: init
+          image: manawaman/deployment-test:init
+          imagePullPolicy: Always
+          ports:
+            - containerPort: 80
+      restartPolicy: Always
+
+---
+
+kind: Service
+apiVersion: v1
+metadata:
+  name: test-deployment-service-0
+spec:
+  type: LoadBalancer
+  selector:
+    app: init
+  ports:
+    - port: 80
+      protocol: TCP
